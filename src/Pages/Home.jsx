@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export const Home = () => {
   return (
     // home page
-    <main data-aos="fade-in" data-aos-duration="2000" className='relative z-0 pt-28 bg-no-repeat w-full bg-cover bg-center overflow-hidden bg-home-bg-mobile md:bg-home-bg-tablet lg:bg-home-bg-desktop gap-8 h-screen text-center lg:text-left tracking-wide '>
+    <main data-aos="fade-in" data-aos-duration="2000" className='relative z-0 pt-28 md:pt-[12.625rem] lg:pt-28 bg-no-repeat w-full bg-cover bg-center overflow-x-hidden bg-home-bg-mobile md:bg-home-bg-tablet lg:bg-home-bg-desktop gap-8 h-screen text-center lg:text-left tracking-wide '>
       <div className="grid lg:grid-container place-items-center md:items-end lg:pt-80 lg:px-14 lg:pb-24 ">
         {/* details */}
         <div className="px-6">
@@ -14,8 +15,8 @@ export const Home = () => {
             because we’ll give you a truly out of this world experience!</p>
         </div>
         {/* image */}
-        <div className="">
-          <a href='/' className='large-btn aspect-[1] text-xl text-[#0B0D17] relative z-10 inline-grid place-items-center w-[150px] tracking-[1.25px] md:w-60 md:text-[32px] md:tracking-[2px] bg-white rounded-full hover:after:scale-150'>EXPLORE</a>
+        <div className="mt-[9.75rem] lg:mt-0">
+          <NavLink to='/destination' className='large-btn aspect-[1] text-xl text-[#0B0D17] relative z-10 inline-grid place-items-center w-[150px] tracking-[1.25px] md:w-60 md:text-[32px] md:tracking-[2px] bg-white rounded-full hover:after:scale-150'>EXPLORE</NavLink>
         </div>
       </div>
     </main>
